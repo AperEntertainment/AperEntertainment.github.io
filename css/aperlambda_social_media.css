@@ -1,0 +1,37 @@
+/*
+ * SOCIAL MEDIAS COLORS
+ */
+
+/* Deviantart */
+.aperlambda-foreground-deviantart
+{
+    color: rgb(5, 204, 70) !important;
+}
+
+/* Google */
+.aperlambda-foreground-youtube
+{
+    color: #E62117 !important;
+}
+
+/* Microsoft */
+.aperlambda-background-skype
+{
+    background: rgb(0, 175, 240) !important;
+}
+
+.aperlambda-foreground-skype
+{
+    color: white;
+}
+
+.aperlambda-foreground-skype-old
+{
+    color: rgb(0, 175, 240) !important;
+}
+
+/* Twitter */
+.aperlambda-foreground-twitter
+{
+    color: #55ACEE !important;
+}
