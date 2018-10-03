@@ -5,33 +5,44 @@
 /* Deviantart */
 .aperlambda-foreground-deviantart
 {
-    color: rgb(5, 204, 70) !important;
+  color: rgb(5, 204, 70) !important;
 }
 
 /* Google */
 .aperlambda-foreground-youtube
 {
-    color: #E62117 !important;
+  color: #E62117 !important;
 }
 
 /* Microsoft */
 .aperlambda-background-skype
 {
-    background: rgb(0, 175, 240) !important;
+  background: rgb(0, 175, 240) !important;
 }
 
 .aperlambda-foreground-skype
 {
-    color: white;
+  color: white;
 }
 
 .aperlambda-foreground-skype-old
 {
-    color: rgb(0, 175, 240) !important;
+  color: rgb(0, 175, 240) !important;
+}
+
+.aperlambda-foreground-github
+{
+  color: black !important;
 }
 
 /* Twitter */
 .aperlambda-foreground-twitter
 {
-    color: #55ACEE !important;
+  color: #55ACEE !important;
+}
+
+/* Discord */
+.aperlambda-forgeground-discord
+{
+  color: #7289DA !important;
 }
