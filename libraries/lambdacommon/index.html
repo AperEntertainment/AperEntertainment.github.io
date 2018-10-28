@@ -174,10 +174,10 @@ int main()
 
   cout << "Starting lambdacommon example with " << terminal::CYAN << "lambdacommon" << terminal::RESET << " v" << lambdacommon::get_version() << endl;
   cout << endl;
-  cout << "Hello " << terminal::LIGHT_YELLOW << system::getUserName() << terminal::RESET << endl;
+  cout << "Hello " << terminal::LIGHT_YELLOW << system::get_user_name() << terminal::RESET << endl;
   // Sleep for 250ms
   system::sleep(250);
-  cout << endl << "I like your CPU, it is " << terminal::LIGHT_GREEN << system::getProcessorName() << terminal::RESET << " right?" << endl;
+  cout << endl << "I like your CPU, it is " << terminal::LIGHT_GREEN << system::get_cpu_name() << terminal::RESET << " right?" << endl;
   system::sleep(1000);
   // Clear all the content of the terminal.
   terminal::clear();
