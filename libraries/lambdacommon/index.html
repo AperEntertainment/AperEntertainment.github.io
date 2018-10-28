@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>AperLambda</title>
+		<title>&lambda;common</title>
 		<meta charset="UTF-8">
-		<link ref="shortcut icon" rel="icon" href="../../aperlambda.ico" type="image/x-icon" />
+		<link ref="shortcut icon" rel="icon" href="https://github.com/AperLambda/lambdacommon/raw/master/resources/lambdacommon.ico" type="image/x-icon" />
 
 		<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -115,6 +115,7 @@
       <div class="section">
         <div class="row">
           <div class="col s12 center">
+						<a href="https://github.com/AperLambda/lambdacommon.git"><img src="https://img.shields.io/badge/Source%20Code-GitHub-9B599A.svg?style=flat-square"></img></a>
             <img src="https://img.shields.io/badge/language-C++-9B599A.svg?style=flat-square"></img>
             <a href="https://raw.githubusercontent.com/AperLambda/lambdacommon/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></img></a>
             <a href="https://github.com/AperLambda/lambdacommon/releases"><img src="https://img.shields.io/github/release/AperLambda/lambdacommon.svg?style=flat-square"></img></a>
@@ -169,9 +170,9 @@ using namespace lambdacommon;
 int main()
 {
   terminal::setup();
-  terminal::setTerminalTitle("&lambda;common - example");
+  terminal::set_title("&lambda;common - example");
 
-  cout << "Starting lambdacommon example with " << terminal::CYAN << "lambdacommon" << terminal::RESET << " v" << lambdacommon::getVersion() << endl;
+  cout << "Starting lambdacommon example with " << terminal::CYAN << "lambdacommon" << terminal::RESET << " v" << lambdacommon::get_version() << endl;
   cout << endl;
   cout << "Hello " << terminal::LIGHT_YELLOW << system::getUserName() << terminal::RESET << endl;
   // Sleep for 250ms
@@ -181,7 +182,7 @@ int main()
   // Clear all the content of the terminal.
   terminal::clear();
   cout << "Because I like my creators I want you to see their website!" << endl;
-  system::openURI("https://aperlambda.github.io/");
+  system::open_uri("https://aperlambda.github.io/");
   return 0;
 }</code></pre>
           </div>
