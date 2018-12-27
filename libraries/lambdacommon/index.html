@@ -77,7 +77,7 @@
             	<h2 class="center light-blue-text"><i class="material-icons medium">flash_on</i></h2>
             	<h5 class="center white-text">Modern and flexible</h5>
 
-            	<p class="light white-text"><span class="brand-title">&lambda;common</span> is written in modern C++17 and it has a C wrapper.</p>
+            	<p class="light white-text"><span class="brand-title">&lambda;common</span> is written in modern C++14 and it has a C wrapper.</p>
           	</div>
         	</div>
 
@@ -104,7 +104,7 @@
             	<h5 class="center white-text">Cross-platform</h5>
 
             	<p class="light white-text">
-								<span class="brand-title">&lambda;common</span> works on multiple platforms: x86, x64 and ARM architectures with Windows, Linux and maybe Mac OSX.
+								<span class="brand-title">&lambda;common</span> works on multiple platforms: x86, x64, ARM and RISC-V architectures with Windows, Linux, Mac OSX and Android.
 							</p>
           	</div>
         	</div>
@@ -166,24 +166,25 @@
             <pre><code class="lang-clike">#include &lt;lambdacommon/system/system.h>
 
 using namespace std;
-using namespace lambdacommon;
+namespace sys = lambdacommon::system;
+namespace term = lambdacommon::terminal;
 
 int main()
 {
-  terminal::setup();
-  terminal::set_title("&lambda;common - example");
+  term::setup();
+  term::set_title("&lambda;common - example");
 
-  cout << "Starting lambdacommon example with " << terminal::CYAN << "lambdacommon" << terminal::RESET << " v" << lambdacommon::get_version() << endl;
+  cout << "Starting lambdacommon example with " << term::CYAN << "lambdacommon" << term::RESET << " v" << lambdacommon::get_version() << endl;
   cout << endl;
-  cout << "Hello " << terminal::LIGHT_YELLOW << system::get_user_name() << terminal::RESET << endl;
+  cout << "Hello " << term::LIGHT_YELLOW << sys::get_user_name() << term::RESET << endl;
   // Sleep for 250ms
-  system::sleep(250);
-  cout << endl << "I like your CPU, it is " << terminal::LIGHT_GREEN << system::get_cpu_name() << terminal::RESET << " right?" << endl;
-  system::sleep(1000);
+  sys::sleep(250);
+  cout << endl << "I like your CPU, it is " << term::LIGHT_GREEN << sys::get_cpu_name() << term::RESET << " right?" << endl;
+  sys::sleep(1000);
   // Clear all the content of the terminal.
-  terminal::clear();
+  term::clear();
   cout << "Because I like my creators I want you to see their website!" << endl;
-  system::open_uri("https://aperlambda.github.io/");
+  sys::open_uri("https://aperlambda.github.io/");
   return 0;
 }</code></pre>
           </div>
@@ -198,6 +199,14 @@ int main()
                 <h3 class="white-text">Windows</h3>
                 <p class="white-text">
                   Download the latest ZIP file of, the compiled binaries and the headers for Windows on <a href="https://github.com/AperLambda/lambdacommon/releases/latest">GitHub</a>.
+                </p>
+              </div>
+            </div>
+						<div class="row">
+              <div class="col s12">
+                <h3 class="white-text">MAC OSX</h3>
+                <p class="white-text">
+                  Please install from the sources.
                 </p>
               </div>
             </div>
