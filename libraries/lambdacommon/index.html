@@ -34,7 +34,7 @@
 
 		  <nav class="blue-grey darken-3">
 				<div class="nav-wrapper">
-					<div class="brand-logo" style="display: flex;align-items:center;">
+					<div class="brand-logo" style="display: flex; align-items: center;">
 						<img class="circle responsive-img" style="max-height: 64px !important; max-width: 32px; padding: 15px 0 !important; margin-left: 5px;" src="../../aperlambda.png" />
 						<a href="../.." class="brand-title" style="margin-left: 5px;">AperLambda</a>
 					</div>
@@ -77,7 +77,8 @@
             	<h2 class="center light-blue-text"><i class="material-icons medium">flash_on</i></h2>
             	<h5 class="center white-text">Modern and flexible</h5>
 
-            	<p class="light white-text"><span class="brand-title">&lambda;common</span> is written in modern C++14 and it has a C wrapper.</p>
+            	<p class="light white-text"><span class="brand-title">&lambda;common</span> is written in modern C++17 and it has a C wrapper.</p>
+							<p class="light white-text">It includes some of the new C++17 features like structured bindings, optional values, etc...</p>
           	</div>
         	</div>
 
@@ -88,12 +89,21 @@
 
               <ul class="light white-text">
                 <li>- OS Detection</li>
+								<li>- System information (username, user directory, CPU name, memory usage, etc...)</li>
                 <li>- Terminal manipulation</li>
-                <li>- String manipulation</li>
+								<li>- Resources management</li>
+                <li>- Basic string manipulation</li>
+								<li>- Basic maths utilities</li>
+								<li>
+									- Graphics:
+									<ul class="light white-text">
+										<li> &nbsp;&nbsp; * Color manipulation</li>
+										<li> &nbsp;&nbsp; * Very vasic scene manipulation</li>
+									</ul>
+								</li>
                 <li>- Files manipulation</li>
                 <li>- URI manipulation</li>
-                <li>- Color manipulation</li>
-                <li>- And more!</li>
+                <li>- and more!</li>
               </ul>
           	</div>
         	</div>
@@ -116,10 +126,11 @@
         <div class="row">
           <div class="col s12 center">
 						<a href="https://github.com/AperLambda/lambdacommon.git"><img src="https://img.shields.io/badge/source%20code-GitHub-9B599A.svg?style=flat-square"></img></a>
-            <img src="https://img.shields.io/badge/language-C++-9B599A.svg?style=flat-square"></img>
+            <img src="https://img.shields.io/badge/language-C++17-9B599A.svg?style=flat-square"></img>
             <a href="https://raw.githubusercontent.com/AperLambda/lambdacommon/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></img></a>
             <a href="https://github.com/AperLambda/lambdacommon/releases"><img src="https://img.shields.io/github/release/AperLambda/lambdacommon.svg?style=flat-square"></img></a>
 						<a href="https://www.codacy.com/app/LambdAurora/lambdacommon?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AperLambda/lambdacommon&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/981c6234700d413297724d7d759e2dec"></img></a>
+						<a href="https://lgtm.com/projects/g/AperLambda/lambdacommon/context:cpp"><img alt="Language grade: C/C++" src="https://img.shields.io/lgtm/grade/cpp/g/AperLambda/lambdacommon.svg?logo=lgtm&logoWidth=18"/></a>
             <a href="https://travis-ci.org/AperLambda/lambdacommon/"><img src="https://travis-ci.org/AperLambda/lambdacommon.svg?branch=master"></img></a>
             <a href="https://ci.appveyor.com/project/LambdAurora/lambdacommon"><img src="https://ci.appveyor.com/api/projects/status/aufclhjsvecva6mk?svg=true"></img></a>
             <img src="https://img.shields.io/github/downloads/AperLambda/lambdacommon/latest/total.svg?style=flat-square"></img>
@@ -196,7 +207,7 @@ int main()
             <h2 class="white-text">Installation</h2>
             <div class="row">
               <div class="col s12">
-                <h3 class="white-text">Windows</h3>
+                <h3 class="white-text"><i class="fab fa-windows"></i> Windows</h3>
                 <p class="white-text">
                   Download the latest ZIP file of, the compiled binaries and the headers for Windows on <a href="https://github.com/AperLambda/lambdacommon/releases/latest">GitHub</a>.
                 </p>
@@ -204,23 +215,45 @@ int main()
             </div>
 						<div class="row">
               <div class="col s12">
-                <h3 class="white-text">Mac OSX</h3>
+                <h3 class="white-text"><i class="fab fa-apple"></i> Mac OSX</h3>
                 <p class="white-text">
-                  Please install from the sources.
+                  Please install from source.
                 </p>
               </div>
             </div>
             <div class="row">
               <div class="col s12">
-                <h3 class="white-text">Linux</h3>
+                <h3 class="white-text"><i class="fab fa-linux"></i> Linux</h3>
                 <div class="row">
                   <div class="col s12">
-                    <h4 class="white-text">ArchLinux (and variants)</h4>
+										<h4 class="white-text"> ArchLinux (and variants)</h4>
                     <p class="white-text">
                       Install <a class="brand-title" href="https://aur.archlinux.org/packages/lambdacommon/">&lambda;common</a> from the AUR.
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+						<div class="row">
+              <div class="col s12">
+                <h3 class="white-text"><i class="fab fa-android aperlambda-foreground-android"></i> Android</h3>
+								<div class="row">
+									<div class="col s12">
+										<h4 class="white-text"> As an app dependency</h4>
+                    <p class="white-text">
+                      Include the source files in your project.
+                    </p>
+                  </div>
+                  <div class="col s12">
+										<h4 class="white-text"> Termux</h4>
+                    <p class="white-text">
+                      Please install from source.
+											<br />
+											The CMake command will change a bit, please use <code>cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" -DCMAKE_BUILD_TYPE="Release" ..</code> instead.
+                    </p>
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
             <div class="row">

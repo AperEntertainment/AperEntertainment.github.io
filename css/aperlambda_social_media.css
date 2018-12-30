@@ -1,6 +1,12 @@
 /*
- * SOCIAL MEDIAS COLORS
+ * SOCIAL MEDIAS COLORS AND OS
  */
+
+/* OS */
+.aperlambda-foreground-android
+{
+  color: #77C159 !important;
+}
 
 /* Deviantart */
 .aperlambda-foreground-deviantart
