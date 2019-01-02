@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>kimiko</title>
+		<meta charset="UTF-8">
+		<link ref="shortcut icon" rel="icon" href="../../aperlambda.ico" type="image/x-icon" />
+
+		<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-okaidia.min.css" />
+		<link type="text/css" rel="stylesheet" href="../../aperlambda.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/aperlambda_social_media.css" />
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="blue-grey darken-4">
+		<header>
+			<ul id="libraries_dropdown" class="dropdown-content">
+				<li><span>Libraries:</span></li>
+				<li><a href="/libraries/lambdacommon">&lambda;common</a></li>
+				<li><a href="/libraries/ionicengine">IonicEngine</a></li>
+				<li><a href="#">kimiko</a></li>
+			</ul>
+
+		  <nav class="blue-grey darken-3">
+				<div class="nav-wrapper">
+					<div class="brand-logo" style="display: flex; align-items: center;">
+						<img class="circle responsive-img" style="max-height: 64px !important; max-width: 32px; padding: 15px 0 !important; margin-left: 5px;" src="../../aperlambda.png" />
+						<a href="../.." class="brand-title" style="margin-left: 5px;">AperLambda</a>
+					</div>
+		    	<a href="#" data-target="mobile-head-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		    	<ul class="right hide-on-med-and-down">
+						<li><a class="dropdown-trigger" href="#!" data-target="libraries_dropdown">Libraries<i class="material-icons right">arrow_drop_down</i></a></li>
+		    	</ul>
+				</div>
+		  </nav>
+
+			<ul class="sidenav" id="mobile-head-navbar">
+				<li><span style="margin-left: 2px;">Libraries</span></li>
+				<li><a href="/libraries/lambdacommon">&lambda;common</a></li>
+				<li><a href="/libraries/ionicengine">IonicEngine</a></li>
+				<li><a href="#">kimiko</a></li>
+		  </ul>
+		</header>
+
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br />
+				<br />
+				<h1 class="header center blue-grey-text text-lighten-4 brand-title">kimiko</h1>
+				<div class="row center">
+					<h5 class="header col s12 light white-text">A command system written in Java and JavaScript.</h5>
+				</div>
+			</div>
+		</div>
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+      	<div class="row">
+        	<div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="material-icons medium">flash_on</i></h2>
+            	<h5 class="center white-text">Modern</h5>
+
+            	<p class="light white-text"><span class="brand-title">kimiko</span> is written in modern standards.</p>
+							<p class="light white-text">Use it with lambdas/arrow functions, optional values, resource names, etc...</p>
+          	</div>
+        	</div>
+
+        	<div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="material-icons medium">check</i></h2>
+            	<h5 class="center white-text">Features rich</h5>
+
+              <ul class="light white-text">
+                <li>- Command management</li>
+								<li>- Command usage, description, alises</li>
+                <li>- Subcommands propagation</li>
+								<li>- Implement as you like</li>
+                <li>- Command parsing</li>
+								<li>- Arguments map</li>
+                <li>- and more!</li>
+              </ul>
+          	</div>
+        	</div>
+
+        	<div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="material-icons medium">settings</i></h2>
+            	<h5 class="center white-text">Flexible</h5>
+
+            	<p class="light white-text">
+								<span class="brand-title">kimiko</span> is designed to adapt itself to different tasks. Use it in your games, in your CLI applications, in Discord bots, etc...
+							</p>
+          	</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="tabs tabs-fixed-width z-depth-1 blue-grey darken-3">
+      <li class="tab"><a href="#kimiko_java">Java</a></li>
+      <li class="tab"><a class="active" href="#kimiko_js">JavaScript</a></li>
+      <li class="tab disabled"><a href="#kimikopp">C++</a></li>
+    </ul>
+
+    <div id="kimiko_java" class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+						<a href="https://github.com/AperLambda/kimiko.git"><img src="https://img.shields.io/badge/source%20code-GitHub-9B599A.svg?style=flat-square"></img></a>
+            <img src="https://img.shields.io/badge/language-Java%2010-9B599A.svg?style=flat-square"></img>
+            <a href="https://raw.githubusercontent.com/AperLambda/kimiko/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></img></a>
+            <a href="https://github.com/AperLambda/kimiko/issues/"><img src="https://img.shields.io/github/issues/AperLambda/kimiko.svg?style=flat-square"></img></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+				<!--   Links And Packaging Section   -->
+      	<div class="row">
+        	<div class="col s12 m6">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="fas fa-code"></i></h2>
+            	<h5 class="center white-text">Source code</h5>
+
+            	<p class="light white-text">
+								What's the license of <span class="brand-title">kimiko</span>? It is MIT licensed.
+								<br />
+								Where can I find the code of <span class="brand-title">kimiko</span>? Well you can find it on <a href="https://github.com/AperLambda/kimiko.git">GitHub</a>!
+							</p>
+          	</div>
+        	</div>
+
+        	<div class="col s12 m6">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="fas fa-cubes"></i></h2>
+            	<h5 class="center white-text">Packages</h5>
+
+							<p class="light white-text"><span class="brand-title">kimiko</span> is in the AperLambda Maven repository.</p>
+
+              <ul class="tabs tabs-fixed-width z-depth-1 blue-grey darken-3">
+                <li class="tab"><a href="#kimiko_java_maven">Maven</a></li>
+                <li class="tab"><a class="active" href="#kimiko_java_gradle">Gradle</a></li>
+              </ul>
+
+              <div id="kimiko_java_maven">
+                <pre><code class="lang-xml">&lt;dependency>
+  &lt;groupId>org.aperlambda&lt;/groupId>
+  &lt;artifactId>kimiko&lt;/artifactId>
+  &lt;version>1.0.8&lt;/version>
+&lt;/dependency></code></pre>
+              </div>
+              <div id="kimiko_java_gradle">
+                <pre><code class="lang-groovy">maven { url "https://aperlambda.github.io/maven" }</code></pre>
+                <pre><code class="lang-groovy">compile 'org.aperlambda:kimiko:1.0.8'</code></pre>
+              </div>
+          	</div>
+        	</div>
+      	</div>
+			</div>
+    </div>
+    <div id="kimiko_js" class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+						<a href="https://github.com/AperLambda/kimiko.js.git"><img src="https://img.shields.io/badge/source%20code-GitHub-9B599A.svg?style=flat-square"></img></a>
+            <img src="https://img.shields.io/badge/language-JS-9B599A.svg?style=flat-square"></img>
+            <a href="https://raw.githubusercontent.com/AperLambda/kimiko.js/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"></img></a>
+            <a href="https://github.com/AperLambda/kimiko.js/issues/"><img src="https://img.shields.io/github/issues/AperLambda/kimiko.js.svg?style=flat-square"></img></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+				<!--   Links And Packaging Section   -->
+      	<div class="row">
+          <div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="fas fa-code"></i></h2>
+            	<h5 class="center white-text">Source code</h5>
+
+            	<p class="light white-text">
+								What's the license of <span class="brand-title">kimiko.js</span>? It is MIT licensed.
+								<br />
+								Where can I find the code of <span class="brand-title">kimiko.js</span>? Well you can find it on <a href="https://github.com/AperLambda/kimiko.js.git">GitHub</a>!
+							</p>
+          	</div>
+        	</div>
+
+        	<div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="fas fa-cubes"></i></h2>
+            	<h5 class="center white-text">Packages</h5>
+
+							<p class="light white-text"><span class="brand-title">kimiko.js</span> is present in npm as `kimiko`. Just type the following command to install it:</p>
+
+							<pre><code class="lang-shell">npm i kimiko</code></pre>
+          	</div>
+        	</div>
+
+          <div class="col s12 m4">
+          	<div class="icon-block">
+            	<h2 class="center light-blue-text"><i class="fas fa-book"></i></h2>
+            	<h5 class="center white-text">Documentation</h5>
+
+            	<p class="light white-text">
+								The documentation of <span class="brand-title">kimiko.js</span> can be found <a href="https://aperlambda.github.io/kimiko.js/">here</a>.
+							</p>
+          	</div>
+        	</div>
+      	</div>
+			</div>
+    </div>
+    <div id="kimikopp" class="col s12"><p class="center white-text">WIP</p></div>
+
+    <footer class="page-footer blue-grey darken-2">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Contact:</h5>
+						<ul>
+							<li><a href="https://discord.gg/zBsgGCv" class="white-text"><i class="fab fa-discord aperlambda-forgeground-discord"></i> Discord Server</a></li>
+							<li><a href="https://twitter.com/AperLambda" class="white-text"><i class="fab fa-twitter aperlambda-foreground-twitter"></i> @AperLambda</a></li>
+							<li><a href="https://github.com/AperLambda" class="white-text"><i class="fab fa-github aperlambda-foreground-github"></i> AperLambda</a></li>
+							<li><a href="mailto:aperlambda@gmail.com" class="white-text"><i class="fas fa-envelope"></i> aperlambda&commat;gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+      		Copyright © 2019 AperLambda <aperlambda@gmail.com>
+      	</div>
+			</div>
+		</footer>
+		<!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+		<script>M.AutoInit();</script>
+	</body>
+</html>
