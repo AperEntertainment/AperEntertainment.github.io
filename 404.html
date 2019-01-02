@@ -2,15 +2,111 @@
 <html>
 	<head>
 		<title>AperLambda - 404</title>
-		<link rel="shortcut icon" href="https://aperlambda.github.io/aperlambda.png" />
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8">
+		<link ref="shortcut icon" rel="icon" href="/aperlambda.ico" type="image/x-icon" />
+
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection" />
+		<link type="text/css" rel="stylesheet" href="/aperlambda.css" />
+		<link type="text/css" rel="stylesheet" href="/css/aperlambda_social_media.css" />
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
-	<body>
-		<p>404 not found!</p>
-		<br />
-		<br />
-		<br />
-		<p>Go to the <a href="https://aperlambda.github.io/">Main page</a></p>
-		<p>GitHub: <a href="https://github.com/AperLambda">AperLambda</a></p>
+	<body class="blue-grey darken-4">
+		<header>
+			<ul id="libraries_dropdown" class="dropdown-content">
+				<li><span>Libraries:</span></li>
+				<li><a href="/libraries/lambdacommon">&lambda;common</a></li>
+				<li><a href="/libraries/ionicengine">IonicEngine</a></li>
+				<li><a href="/libraries/kimiko">kimiko</a></li>
+			</ul>
+
+		  <nav class="blue-grey darken-3">
+				<div class="nav-wrapper">
+					<div class="brand-logo" style="display: flex;align-items:center;">
+						<img class="circle responsive-img" style="max-height: 64px !important; max-width: 32px; padding: 15px 0 !important; margin-left: 5px;" src="aperlambda.png" />
+						<a href="#!" class="brand-title" style="margin-left: 5px;">AperLambda</a>
+					</div>
+		    	<a href="#" data-target="mobile-head-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		    	<ul class="right hide-on-med-and-down">
+						<li><a class="dropdown-trigger" href="#!" data-target="libraries_dropdown">Libraries<i class="material-icons right">arrow_drop_down</i></a></li>
+		    	</ul>
+				</div>
+		  </nav>
+
+		  <ul class="sidenav" id="mobile-head-navbar">
+				<li><span style="margin-left: 2px;">Libraries</span></li>
+				<li><a href="/libraries/lambdacommon">&lambda;common</a></li>
+				<li><a href="/libraries/ionicengine">IonicEngine</a></li>
+				<li><a href="/libraries/kimiko">kimiko</a></li>
+		  </ul>
+		</header>
+
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br />
+				<br />
+				<h1 class="header center blue-grey-text text-lighten-4 brand-title">404 not found!</h1>
+				<div class="row center">
+					<h5 class="header col s12 light white-text">Sorry but the requested resource cannot be found.</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="section">
+  			<!--   Icon Section   -->
+      	<div class="row">
+        	<div class="col s12">
+          	<div class="icon-block">
+            	<p class="light white-text">The resource you try to find is not here... Are you lost?</p>
+							<p class="light white-text">We suggest you to go on these pages:</p>
+							<ul>
+								<li><a href="/">Main page</a></li>
+								<li><a href="https://github.com/AperLambda">GitHub page of AperLambda</a></li>
+							</ul>
+          	</div>
+        	</div>
+      	</div>
+    	</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+		
+		<footer class="page-footer blue-grey darken-2">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Contact:</h5>
+						<ul>
+							<li><a href="https://discord.gg/zBsgGCv" class="white-text"><i class="fab fa-discord aperlambda-forgeground-discord"></i> Discord Server</a></li>
+							<li><a href="https://twitter.com/AperLambda" class="white-text"><i class="fab fa-twitter aperlambda-foreground-twitter"></i> @AperLambda</a></li>
+							<li><a href="https://github.com/AperLambda" class="white-text"><i class="fab fa-github aperlambda-foreground-github"></i> AperLambda</a></li>
+							<li><a href="mailto:aperlambda@gmail.com" class="white-text"><i class="fas fa-envelope"></i> aperlambda&commat;gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+      		Copyright © 2018 AperLambda <aperlambda@gmail.com>
+      	</div>
+			</div>
+		</footer>
+		<!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+		<script>M.AutoInit();</script>
 	</body>
 </html>
