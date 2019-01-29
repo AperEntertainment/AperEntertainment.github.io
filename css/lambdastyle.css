@@ -1,0 +1,60 @@
+/*
+ * Copyright © 2019 AperLambda <AperLambda@gmail.com>
+ *
+ * This file is part of lambdastyle.
+ *
+ * Licensed under the MIT license. For more information,
+ * see the LICENSE file.
+ */
+
+/*
+ * Breakpoints utilities.
+ */
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hide-on-large-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hide-on-large-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-wdith: 1200px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hide-on-extra-large-only {
+    display: none !important;
+  }
+}
