@@ -18,6 +18,38 @@
 }
 
 /*
+ * Utilities.
+ */
+
+.hide {
+  display: none !important;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/*
  * Breakpoints utilities.
  */
 
