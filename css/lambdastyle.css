@@ -8,6 +8,16 @@
  */
 
 /*
+ * Grid
+ */
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+/*
  * Breakpoints utilities.
  */
 
@@ -56,5 +66,41 @@
 @media only screen and (min-width: 1200px) {
   .hide-on-extra-large-only {
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small-only {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-med-and-down {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .show-on-med-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-med-only {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-wdith: 1200px) {
+  .show-on-large-only {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .show-on-extra-large-only {
+    display: block !important;
   }
 }
