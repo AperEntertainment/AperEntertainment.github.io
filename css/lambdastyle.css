@@ -84,6 +84,34 @@ h6 {
 }
 
 /*
+ * Cards
+ */
+
+.card .card-actions {
+  background-color: inherit;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  padding: 16px 14px;
+}
+
+.card:not(.flat) .card-actions:last-child {
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-actions a:not(.btn) {
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  white-space: nowrap;
+  margin-right: 16px;
+  color: #ffab40;
+}
+
+.card .card-actions a:not(.btn):hover {
+  color: #ffd8a6;
+}
+
+/*
  * Animations
  */
 
