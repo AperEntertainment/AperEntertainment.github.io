@@ -17,11 +17,30 @@ const LS_POINTER_ACTIVATION_EVENT_TYPES = ['touchstart', 'mousedown', 'keydown']
 const LS_POINTER_DEACTIVATION_EVENT_TYPES = ['touchend', 'mouseup', 'contextmenu'];
 
 LambdaStyle.init = () => {
+  console.log(' -- LambdaStyle -- Initializing...');
   LambdaStyle.init_ripples();
+};
+
+LambdaStyle.enable_auto_referesh = () => {
+  console.log(' -- LambdaStyle -- Enabled auto refresh.');
+  LambdaStyle.internal.mut_observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      LambdaStyle.update_ripples();
+    });
+  });
+  LambdaStyle.internal.mut_observer.observe(document.querySelector('body'), { childList: true, subtree: true, attributes: true });
 };
 
 LambdaStyle.init_ripples = () => {
   LambdaStyle.internal.ripples = LambdaStyle.utils.to_array(document.querySelectorAll('.ls-ripple-effect, .ls-btn:not([disabled])')).map(elem => new LSRipple(elem));
+};
+
+LambdaStyle.update_ripples = () => {
+  let ripples_current = LambdaStyle.internal.ripples.map(ripple => ripple.elem);
+  let ripples_updated = LambdaStyle.utils.to_array(document.querySelectorAll('.ls-ripple-effect, .ls-btn:not([disabled])'));
+  ripples_updated = ripples_updated.filter(elem => !ripples_current.includes(elem)).map(elem => new LSRipple(elem));
+  ripples_updated.forEach(ripple => LambdaStyle.internal.ripples.push(ripple));
+  return ripples_updated.length;
 };
 
 /*
