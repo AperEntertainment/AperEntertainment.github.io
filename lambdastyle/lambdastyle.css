@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019 AperLambda <AperLambda@gmail.com>
+ * Copyright © 2019 LambdAurora <aurora42lambda@gmail.com>
  *
  * This file is part of lambdastyle.
  *
