@@ -1,0 +1,147 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.aperlambda",
+    "module": "lambdajcommon",
+    "version": "1.7.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.0.1",
+      "buildId": "ittjw4elivg7theusvh45ndlbm"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.5"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "17.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lambdajcommon-1.7.4.jar",
+          "url": "lambdajcommon-1.7.4.jar",
+          "size": 44405,
+          "sha512": "f6da28ceb86515a1a30dbd906ebd3f3413caf669784c9bf08176ce52325c2aae8b746cb5d900cb78290c0cb9879e7267e6007335b9fe6567ac7fa2bf9fc28bcb",
+          "sha256": "b1764af6dac0e4413642012147087bb6a5145450001715e37e3ae1b3c111bc3c",
+          "sha1": "49dc10a652b90a01afece7be8b6cbbad7930eedc",
+          "md5": "37f3f186c7de211afaef5d79ee364e1f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.5"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "27.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "17.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lambdajcommon-1.7.4.jar",
+          "url": "lambdajcommon-1.7.4.jar",
+          "size": 44405,
+          "sha512": "f6da28ceb86515a1a30dbd906ebd3f3413caf669784c9bf08176ce52325c2aae8b746cb5d900cb78290c0cb9879e7267e6007335b9fe6567ac7fa2bf9fc28bcb",
+          "sha256": "b1764af6dac0e4413642012147087bb6a5145450001715e37e3ae1b3c111bc3c",
+          "sha1": "49dc10a652b90a01afece7be8b6cbbad7930eedc",
+          "md5": "37f3f186c7de211afaef5d79ee364e1f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "lambdajcommon-1.7.4-javadoc.jar",
+          "url": "lambdajcommon-1.7.4-javadoc.jar",
+          "size": 548070,
+          "sha512": "43bec9f989073a75ec1a59d7d2e8c3704ea30c192a44398c9f73a4abcb6ca1dbc49da09cf58ffdee73b049093de1b6002e5eec0d6dc5676e82bf7c5327150988",
+          "sha256": "c3f18f4d816c0a71b1d8ba016f6d5b448a887dc7d2247560814913d64a88d85a",
+          "sha1": "287091ab682014ade0cccebb4a1660467339c9f6",
+          "md5": "4122a6cb2ce7cb080087e184c60559dc"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "lambdajcommon-1.7.4-sources.jar",
+          "url": "lambdajcommon-1.7.4-sources.jar",
+          "size": 31471,
+          "sha512": "43bf991d0608b8474f594986405ba31704ede2292bab93e1359129e877d8d8af75156fc69538bc43f7eb72aba4093e0e074242f91b131371a43995004774f28c",
+          "sha256": "64c8383610ae707b8f93486a7def021279bc3cd4b5f1eaf4a252bf5badd22479",
+          "sha1": "643c782cd6343f02ee5a871ca59164e6792203a3",
+          "md5": "f6159421dbb9a8737fe1198bfc62117a"
+        }
+      ]
+    }
+  ]
+}
